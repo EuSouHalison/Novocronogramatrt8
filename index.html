@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#0b1020" name="theme-color"/>
+<title>Plano de Guerra TRT-8 · FCC</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a aria-label="Ir para o início" class="brand" href="#top">
+<span class="brand-mark">T8</span>
+<span><strong>Plano de Guerra</strong><small>TRT-8 · FCC</small></span>
+</a>
+<nav aria-label="Navegação principal" class="nav">
+<a class="active" href="#top">Visão geral</a>
+<a href="#como-fcc">Perfil da FCC</a>
+<a href="#raio-x">Raio-X</a>
+<a href="#grade">Carga semanal</a>
+<a href="#fase1">Cronograma</a>
+<a href="#fase2">Modo edital</a>
+<a href="#metodo">Método</a>
+</nav>
+<div class="sidebar-card">
+<span>Progresso geral</span>
+<strong><span id="side-percent">0</span>%</strong>
+<div class="mini-track"><i id="side-bar"></i></div>
+<small><span id="side-done">0</span> de <span id="side-total">70</span> blocos</small>
+</div>
+<button class="ghost-btn" id="reset-progress" type="button">Zerar progresso</button>
+</aside>
+<div class="app-main">
+<header class="topbar">
+<button aria-label="Abrir menu" class="icon-btn menu-btn" id="menu-btn" type="button">☰</button>
+<div class="topbar-title"><strong>Operação Aprovação</strong><span>Analista Judiciário · Área Judiciária</span></div>
+<div class="topbar-actions">
+<button aria-label="Alternar tema" class="icon-btn" id="theme-btn" type="button">◐</button>
+<button class="primary-btn" id="print-btn" type="button">Imprimir / PDF</button>
+</div>
+</header>
+<main id="top">
+<section class="hero-dashboard">
+<div class="hero-copy">
+<span class="status-dot">Banca definida · FCC</span>
+<h1>Seu plano de guerra para o <em>TRT-8</em></h1>
+<p>Estratégia enxuta, organizada por incidência, peso e urgência. O objetivo é transformar cada hora de estudo em pontos de prova.</p>
+<div class="hero-actions">
+<a class="primary-btn" href="#fase1">Começar cronograma</a>
+<a class="secondary-btn" href="#raio-x">Ver prioridades</a>
+</div>
+</div>
+<div class="progress-panel">
+<div class="ring" id="progress-ring"><span><strong id="hero-percent">0%</strong><small>concluído</small></span></div>
+<div class="progress-copy"><strong id="hero-done">0 de 70 blocos</strong><span>Fase 1 · Base FCC</span></div>
+</div>
+</section>
+<section aria-label="Resumo do plano" class="quick-stats">
+<article><span>Hoje</span><strong id="stat-today">—</strong></article>
+<article><span>Carga semanal</span><strong>25h líquidas</strong></article>
+<article><span>Prioridade máxima</span><strong>Trabalho + Processo</strong></article>
+<article><span>Até 07/02/2027</span><strong id="stat-days">— dias</strong></article>
+</section>
+<div class="content-wrap">
+          
+ ============ MASTHEAD ============ 
+<header class="mast">
+<div class="eyebrow">Plano Estratégico de Estudo · Operação Aprovação</div>
+<h1>TRT-8 <span class="mark">Banca FCC</span></h1>
+<div class="meta">
+<span><b>Cargo:</b> Analista Judiciário · Área Judiciária</span>
+<span><b>Jurisdição:</b> PA / AP</span>
+<span><b>Banca definida:</b> 13/07/2026</span>
+</div>
+</header>
+ ============ COUNTDOWN ============ 
+<div class="clock">
+<div><span class="lbl">Hoje</span><span class="val" id="c-today">—</span></div>
+<div><span class="lbl">Edital estimado</span><span class="val">set – out / 2026</span></div>
+<div><span class="lbl">Teto: validade do concurso anterior</span><span class="val red" id="c-days">— dias · 07/02/2027</span></div>
+</div>
+ ============ 01 COMO A FCC COBRA ============ 
+<section class="block" id="como-fcc">
+<div class="sec-head"><span class="no">SEÇÃO 01</span><h2>Como a FCC cobra</h2></div>
+<div class="rules">
+<div class="rule"><span class="k">FORMATO</span><p>Múltipla escolha, <b>5 alternativas</b> (A–E). Referência recente do mesmo cargo: 60 questões (TRF-3/2024, mesma banca).</p></div>
+<div class="rule"><span class="k">ESTILO</span><p><b>Letra da lei.</b> A questão transcreve o dispositivo trocando um verbo, um prazo ou um percentual. Jurisprudência quase sempre sumulada; doutrina de autor: quase zero.</p></div>
+<div class="rule"><span class="k">PESO</span><p>Específicas <b>peso 3</b> × gerais <b>peso 1</b>. Uma questão de Trabalho vale 3× uma de Português — mas há mínimo por grupo: Português não pode ser abandonado.</p></div>
+<div class="rule"><span class="k">ESPELHO</span><p>Provas FCC 2025 de Analista Judiciária: <b>TRT-1, TRT-2, TRT-6 e TRT-15</b>. O edital do TRT-8 tende a clonar esse programa. São seus simulados oficiais.</p></div>
+</div>
+</section>
+ ============ 02 RAIO-X ============ 
+<section class="block" id="raio-x">
+<div class="sec-head"><span class="no">SEÇÃO 02</span><h2>Raio-X por matéria</h2></div>
+<p class="lead">Percentuais do histórico de questões da própria FCC em concursos de área judiciária. A marcação amarela é a curva de prioridade: <b>o que está grifado sustenta sua nota</b>.</p>
+<div class="subj">
+<div class="subj-top"><h3>Direito do Trabalho</h3><span class="hrs">6h/sem</span></div>
+<p class="como"><b>Como cai:</b> CLT literal + súmulas do TST embutidas (6, 85, 244, 338, 428, 437, 444). 3 blocos fecham 73% da matéria.</p>
+<ul class="topics">
+<li><span class="t" style="--w:83%">Contrato de trabalho</span><span class="pct">35%</span></li>
+<li><span class="t" style="--w:55%">Duração do trabalho</span><span class="pct">23%</span></li>
+<li><span class="t" style="--w:36%">Remuneração e equiparação</span><span class="pct">15%</span></li>
+<li class="dim"><span class="t" style="--w:19%">Direito coletivo</span><span class="pct">8%</span></li>
+<li class="dim"><span class="t" style="--w:19%">Jurisprudência TST</span><span class="pct">8%</span></li>
+</ul>
+</div>
+<div class="subj">
+<div class="subj-top"><h3>Processo do Trabalho</h3><span class="hrs">5h/sem</span></div>
+<p class="como"><b>Como cai:</b> CLT seca + prazos (o de 8 dias vai aparecer). A mais "jurisprudencial" da prova — Súm. 214, 414, 425, 463. Pulverizada: exige cobertura ampla.</p>
+<ul class="topics">
+<li><span class="t" style="--w:31%">Execução trabalhista</span><span class="pct">13%</span></li>
+<li><span class="t" style="--w:24%">Jurisprudência processual</span><span class="pct">10%</span></li>
+<li><span class="t" style="--w:17%">Audiência</span><span class="pct">7%</span></li>
+<li><span class="t" style="--w:17%">Organização da JT</span><span class="pct">7%</span></li>
+<li><span class="t" style="--w:17%">Sumaríssimo e sumário</span><span class="pct">7%</span></li>
+<li class="dim"><span class="t" style="--w:14%">Competência · atos e prazos · provas</span><span class="pct">6% cada</span></li>
+<li class="dim"><span class="t" style="--w:12%">Custas · partes e procuradores</span><span class="pct">5% cada</span></li>
+</ul>
+</div>
+<div class="subj">
+<div class="subj-top"><h3>Direito Constitucional</h3><span class="hrs">3h/sem</span></div>
+<p class="como"><b>Como cai:</b> letra da CF (jurisprudência: só 2%). Foco cirúrgico: arts. 5º, 7º–11, 92–116 (Justiça do Trabalho) e processo legislativo.</p>
+<ul class="topics">
+<li><span class="t" style="--w:100%">Organização dos Poderes (44–135)</span><span class="pct">42%</span></li>
+<li><span class="t" style="--w:88%">Direitos e garantias (5º–17)</span><span class="pct">37%</span></li>
+<li class="dim"><span class="t" style="--w:33%">Organização do Estado</span><span class="pct">14%</span></li>
+<li class="dim"><span class="t" style="--w:10%">Controle de constitucionalidade</span><span class="pct">4%</span></li>
+</ul>
+</div>
+<div class="subj">
+<div class="subj-top"><h3>Direito Administrativo</h3><span class="hrs">3h/sem</span></div>
+<p class="como"><b>Como cai:</b> lei seca (8.112: licenças, penalidades, PAD, prazos). Doutrina clássica só em atos e poderes.</p>
+<ul class="topics">
+<li><span class="t" style="--w:60%">Lei 8.112/90</span><span class="pct">25%</span></li>
+<li><span class="t" style="--w:29%">Licitações — Lei 14.133</span><span class="pct">12%</span></li>
+<li><span class="t" style="--w:29%">Atos administrativos</span><span class="pct">12%</span></li>
+<li class="dim"><span class="t" style="--w:17%">Processo adm. · poderes</span><span class="pct">7% cada</span></li>
+<li class="dim"><span class="t" style="--w:14%">Contratos administrativos</span><span class="pct">6%</span></li>
+</ul>
+</div>
+<div class="subj">
+<div class="subj-top"><h3>Direito Civil</h3><span class="hrs">2h/sem</span></div>
+<p class="como"><b>Como cai:</b> Código Civil literal. Jurisprudência praticamente inexistente. A FCC adora os prazos do art. 206.</p>
+<ul class="topics">
+<li><span class="t" style="--w:55%">Das pessoas (1º–78)</span><span class="pct">23%</span></li>
+<li><span class="t" style="--w:52%">Fatos e negócio jurídico</span><span class="pct">22%</span></li>
+<li class="dim"><span class="t" style="--w:26%">Contratos em espécie</span><span class="pct">11%</span></li>
+<li class="dim"><span class="t" style="--w:24%">Obrigações</span><span class="pct">10%</span></li>
+</ul>
+</div>
+<div class="subj">
+<div class="subj-top"><h3>Processo Civil</h3><span class="hrs">2h/sem</span></div>
+<p class="como"><b>Como cai:</b> CPC seco e prazos (contagem em dias úteis, art. 219). Aplicação subsidiária ao processo do trabalho conecta as duas matérias.</p>
+<ul class="topics">
+<li><span class="t" style="--w:71%">Conhecimento + cumprimento de sentença</span><span class="pct">30%</span></li>
+<li><span class="t" style="--w:45%">Sujeitos do processo</span><span class="pct">19%</span></li>
+<li><span class="t" style="--w:36%">Atos processuais</span><span class="pct">15%</span></li>
+<li class="dim"><span class="t" style="--w:26%">Recursos</span><span class="pct">11%</span></li>
+<li class="dim"><span class="t" style="--w:24%">Execução</span><span class="pct">10%</span></li>
+</ul>
+</div>
+<div class="subj">
+<div class="subj-top"><h3>Língua Portuguesa</h3><span class="hrs">3h/sem · diário</span></div>
+<p class="como"><b>Como cai:</b> texto e reescrita, não nomenclatura. 6 tópicos cobrem 75%. Só se resolve com questão — 10 questões FCC por dia, todos os dias.</p>
+<ul class="topics">
+<li><span class="t" style="--w:79%">Interpretação de texto</span><span class="pct">33%</span></li>
+<li><span class="t" style="--w:29%">Morfologia (conectivos, pronomes)</span><span class="pct">12%</span></li>
+<li><span class="t" style="--w:24%">Reescrita de frases</span><span class="pct">10%</span></li>
+<li class="dim"><span class="t" style="--w:17%">Concordância</span><span class="pct">7%</span></li>
+<li class="dim"><span class="t" style="--w:14%">Pontuação · clareza e correção</span><span class="pct">6% cada</span></li>
+</ul>
+</div>
+</section>
+ ============ 03 GRADE SEMANAL ============ 
+<section class="block" id="grade">
+<div class="sec-head"><span class="no">SEÇÃO 03</span><h2>Grade semanal — 25h líquidas</h2></div>
+<div class="grade">
+<span class="gcell">Trabalho <b>6h</b></span>
+<span class="gcell">Proc. Trabalho <b>5h</b></span>
+<span class="gcell">Português <b>3h</b></span>
+<span class="gcell">Constitucional <b>3h</b></span>
+<span class="gcell">Administrativo <b>3h</b></span>
+<span class="gcell">Civil <b>2h</b></span>
+<span class="gcell">Proc. Civil <b>2h</b></span>
+<span class="gcell">Revisão SM-2 <b>1h</b></span>
+</div>
+<p class="note">Ritmo em rampa (3h → 4h → 5h/dia): se a semana render menos de 25h, corte proporcionalmente de baixo para cima — Trabalho e Processo do Trabalho são intocáveis.</p>
+</section>
+ ============ 04 FASE 1 ============ 
+<section class="block" id="fase1">
+<div class="sec-head"><span class="no">SEÇÃO 04</span><h2>Fase 1 — Base FCC</h2></div>
+<div class="fase-meta">
+<p class="lead" style="margin:0">20/07 → 27/09 <b>ou até o edital sair</b> — o que vier primeiro. Marque cada bloco concluído.</p>
+<span class="progress-chip"><span class="done" id="p-done">0</span>/<span id="p-total">70</span> blocos</span>
+</div>
+<!-- S1 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S1</span><span class="wk-dates">20 – 26 jul</span><span class="wk-prog" data-w="s1">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s1" id="s1-a" type="checkbox"/><label for="s1-a"><span class="tag">TRAB</span>Contrato I — caracterização; empregado × empregador; grupo econômico; sucessão<span class="ref">CLT 2º–3º, 10, 10-A, 448, 448-A · Súm. 129</span></label></li>
+<li><input class="blk" data-w="s1" id="s1-b" type="checkbox"/><label for="s1-b"><span class="tag">PROC</span>Organização da Justiça do Trabalho + competência<span class="ref">CF 111–116 e 114 · CLT 643–682 · Súm. 392</span></label></li>
+<li><input class="blk" data-w="s1" id="s1-c" type="checkbox"/><label for="s1-c"><span class="tag">CONST</span>Art. 5º — primeira metade (caput ao inc. XXXV)</label></li>
+<li><input class="blk" data-w="s1" id="s1-d" type="checkbox"/><label for="s1-d"><span class="tag">ADM</span>8.112 I — provimento, posse, exercício, estágio probatório, vacância</label></li>
+<li><input class="blk" data-w="s1" id="s1-e" type="checkbox"/><label for="s1-e"><span class="tag">CIVIL</span>LINDB + pessoas naturais (capacidade, personalidade)</label></li>
+<li><input class="blk" data-w="s1" id="s1-f" type="checkbox"/><label for="s1-f"><span class="tag">PC</span>Normas fundamentais + jurisdição e competência (panorama)</label></li>
+<li><input class="blk" data-w="s1" id="s1-g" type="checkbox"/><label for="s1-g"><span class="tag">PORT</span>Interpretação de texto — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S2 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S2</span><span class="wk-dates">27 jul – 02 ago</span><span class="wk-prog" data-w="s2">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s2" id="s2-a" type="checkbox"/><label for="s2-a"><span class="tag">TRAB</span>Contrato II — prazo determinado; intermitente; temporário e terceirização; teletrabalho<span class="ref">CLT 443, 452-A, 75-A/75-E · Lei 6.019</span></label></li>
+<li><input class="blk" data-w="s2" id="s2-b" type="checkbox"/><label for="s2-b"><span class="tag">PROC</span>Partes e procuradores; jus postulandi; honorários; custas e gratuidade<span class="ref">CLT 789–793 e 791-A · Súm. 425, 463</span></label></li>
+<li><input class="blk" data-w="s2" id="s2-c" type="checkbox"/><label for="s2-c"><span class="tag">CONST</span>Art. 5º — segunda metade + remédios constitucionais</label></li>
+<li><input class="blk" data-w="s2" id="s2-d" type="checkbox"/><label for="s2-d"><span class="tag">ADM</span>8.112 II — remoção, redistribuição, direitos e vantagens, licenças</label></li>
+<li><input class="blk" data-w="s2" id="s2-e" type="checkbox"/><label for="s2-e"><span class="tag">CIVIL</span>Pessoas jurídicas + domicílio + bens</label></li>
+<li><input class="blk" data-w="s2" id="s2-f" type="checkbox"/><label for="s2-f"><span class="tag">PC</span>Sujeitos I — partes, litisconsórcio, intervenção de terceiros</label></li>
+<li><input class="blk" data-w="s2" id="s2-g" type="checkbox"/><label for="s2-g"><span class="tag">PORT</span>Reescrita de frases — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S3 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S3</span><span class="wk-dates">03 – 09 ago</span><span class="wk-prog" data-w="s3">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s3" id="s3-a" type="checkbox"/><label for="s3-a"><span class="tag">TRAB</span>Contrato III — alteração, suspensão e interrupção<span class="ref">CLT 468–476 · Súm. 265, 372</span></label></li>
+<li><input class="blk" data-w="s3" id="s3-b" type="checkbox"/><label for="s3-b"><span class="tag">PROC</span>Atos, termos e prazos (contagem em dias úteis) + nulidades<span class="ref">CLT 770–782 e 794–798</span></label></li>
+<li><input class="blk" data-w="s3" id="s3-c" type="checkbox"/><label for="s3-c"><span class="tag">CONST</span>Direitos sociais — arts. 6º a 11 (o art. 7º é ouro em TRT)</label></li>
+<li><input class="blk" data-w="s3" id="s3-d" type="checkbox"/><label for="s3-d"><span class="tag">ADM</span>8.112 III — deveres, proibições, penalidades e prazos</label></li>
+<li><input class="blk" data-w="s3" id="s3-e" type="checkbox"/><label for="s3-e"><span class="tag">CIVIL</span>Negócio jurídico I — validade e defeitos</label></li>
+<li><input class="blk" data-w="s3" id="s3-f" type="checkbox"/><label for="s3-f"><span class="tag">PC</span>Sujeitos II — juiz, auxiliares, MP; impedimento e suspeição</label></li>
+<li><input class="blk" data-w="s3" id="s3-g" type="checkbox"/><label for="s3-g"><span class="tag">PORT</span>Concordância verbal e nominal — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S4 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S4</span><span class="wk-dates">10 – 16 ago</span><span class="wk-prog" data-w="s4">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s4" id="s4-a" type="checkbox"/><label for="s4-a"><span class="tag">TRAB</span>Contrato IV — justa causa; rescisão indireta; acordo mútuo; aviso prévio<span class="ref">CLT 482, 483, 484-A, 487+ · Lei 12.506 · Súm. 276, 380</span></label></li>
+<li><input class="blk" data-w="s4" id="s4-b" type="checkbox"/><label for="s4-b"><span class="tag">PROC</span>Petição inicial e resposta; exceções; reconvenção<span class="ref">CLT 837–847</span></label></li>
+<li><input class="blk" data-w="s4" id="s4-c" type="checkbox"/><label for="s4-c"><span class="tag">CONST</span>Nacionalidade + direitos políticos (arts. 12–17)</label></li>
+<li><input class="blk" data-w="s4" id="s4-d" type="checkbox"/><label for="s4-d"><span class="tag">ADM</span>8.112 IV — PAD e sindicância (prazos!)</label></li>
+<li><input class="blk" data-w="s4" id="s4-e" type="checkbox"/><label for="s4-e"><span class="tag">CIVIL</span>Negócio jurídico II — invalidade; condição, termo e encargo</label></li>
+<li><input class="blk" data-w="s4" id="s4-f" type="checkbox"/><label for="s4-f"><span class="tag">PC</span>Atos processuais — forma, prazos (art. 219), comunicações</label></li>
+<li><input class="blk" data-w="s4" id="s4-g" type="checkbox"/><label for="s4-g"><span class="tag">PORT</span>Regência + crase — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S5 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S5</span><span class="wk-dates">17 – 23 ago</span><span class="wk-prog" data-w="s5">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s5" id="s5-a" type="checkbox"/><label for="s5-a"><span class="tag">TRAB</span>Estabilidades (gestante, cipeiro, acidentário) + FGTS<span class="ref">Súm. 244, 339, 378</span></label></li>
+<li><input class="blk" data-w="s5" id="s5-b" type="checkbox"/><label for="s5-b"><span class="tag">PROC</span>Audiência + provas<span class="ref">CLT 843–852 e 818–830 · Súm. 74, 338</span></label></li>
+<li><input class="blk" data-w="s5" id="s5-c" type="checkbox"/><label for="s5-c"><span class="tag">CONST</span>Poder Judiciário I — disposições gerais (arts. 92–100)</label></li>
+<li><input class="blk" data-w="s5" id="s5-d" type="checkbox"/><label for="s5-d"><span class="tag">ADM</span>Atos administrativos I — requisitos, atributos, classificação</label></li>
+<li><input class="blk" data-w="s5" id="s5-e" type="checkbox"/><label for="s5-e"><span class="tag">CIVIL</span>Prescrição e decadência — prazos do art. 206</label></li>
+<li><input class="blk" data-w="s5" id="s5-f" type="checkbox"/><label for="s5-f"><span class="tag">PC</span>Tutela provisória (urgência × evidência)</label></li>
+<li><input class="blk" data-w="s5" id="s5-g" type="checkbox"/><label for="s5-g"><span class="tag">PORT</span>Pontuação (vírgula!) — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S6 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S6</span><span class="wk-dates">24 – 30 ago</span><span class="wk-prog" data-w="s6">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s6" id="s6-a" type="checkbox"/><label for="s6-a"><span class="tag">TRAB</span>Duração I — jornada; tempo à disposição; controle<span class="ref">CLT 58, 62, 74 · Súm. 338, 366, 428</span></label></li>
+<li><input class="blk" data-w="s6" id="s6-b" type="checkbox"/><label for="s6-b"><span class="tag">PROC</span>Sumaríssimo + sumário + homologação de acordo extrajudicial<span class="ref">CLT 852-A a 852-I e 855-B · Lei 5.584/70</span></label></li>
+<li><input class="blk" data-w="s6" id="s6-c" type="checkbox"/><label for="s6-c"><span class="tag">CONST</span>Judiciário II — TST e Justiça do Trabalho (foco 111–116)</label></li>
+<li><input class="blk" data-w="s6" id="s6-d" type="checkbox"/><label for="s6-d"><span class="tag">ADM</span>Atos II — anulação, revogação, convalidação + poderes administrativos</label></li>
+<li><input class="blk" data-w="s6" id="s6-e" type="checkbox"/><label for="s6-e"><span class="tag">CIVIL</span>Obrigações — modalidades e adimplemento</label></li>
+<li><input class="blk" data-w="s6" id="s6-f" type="checkbox"/><label for="s6-f"><span class="tag">PC</span>Procedimento comum — inicial, contestação, revelia</label></li>
+<li><input class="blk" data-w="s6" id="s6-g" type="checkbox"/><label for="s6-g"><span class="tag">PORT</span>Morfologia — conjunções e pronomes — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S7 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S7</span><span class="wk-dates">31 ago – 06 set</span><span class="wk-prog" data-w="s7">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s7" id="s7-a" type="checkbox"/><label for="s7-a"><span class="tag">TRAB</span>Duração II — horas extras; compensação e banco de horas; turnos ininterruptos<span class="ref">CLT 59 · CF 7º, XIV · Súm. 85, 423</span></label></li>
+<li><input class="blk" data-w="s7" id="s7-b" type="checkbox"/><label for="s7-b"><span class="tag">PROC</span>Recursos I — pressupostos; prazo de 8 dias; RO; agravos<span class="ref">CLT 893–897 · Súm. 214</span></label></li>
+<li><input class="blk" data-w="s7" id="s7-c" type="checkbox"/><label for="s7-c"><span class="tag">CONST</span>Funções essenciais (127–135) + organização do Estado (panorama)</label></li>
+<li><input class="blk" data-w="s7" id="s7-d" type="checkbox"/><label for="s7-d"><span class="tag">ADM</span>Lei 14.133 I — modalidades; julgamento; dispensa × inexigibilidade</label></li>
+<li><input class="blk" data-w="s7" id="s7-e" type="checkbox"/><label for="s7-e"><span class="tag">CIVIL</span>Inadimplemento + contratos (teoria geral)</label></li>
+<li><input class="blk" data-w="s7" id="s7-f" type="checkbox"/><label for="s7-f"><span class="tag">PC</span>Provas + sentença e coisa julgada</label></li>
+<li><input class="blk" data-w="s7" id="s7-g" type="checkbox"/><label for="s7-g"><span class="tag">PORT</span>Semântica no contexto — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S8 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S8</span><span class="wk-dates">07 – 13 set</span><span class="wk-prog" data-w="s8">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s8" id="s8-a" type="checkbox"/><label for="s8-a"><span class="tag">TRAB</span>Duração III — intervalos; noturno; DSR + férias<span class="ref">CLT 66–73 e 129–153 · Súm. 437, 146, 81</span></label></li>
+<li><input class="blk" data-w="s8" id="s8-b" type="checkbox"/><label for="s8-b"><span class="tag">PROC</span>Recursos II — RR e transcendência; depósito recursal<span class="ref">CLT 896, 896-A, 899 · Súm. 128</span></label></li>
+<li><input class="blk" data-w="s8" id="s8-c" type="checkbox"/><label for="s8-c"><span class="tag">CONST</span>Poder Legislativo (arts. 44–58)</label></li>
+<li><input class="blk" data-w="s8" id="s8-d" type="checkbox"/><label for="s8-d"><span class="tag">ADM</span>14.133 II — contratos: alteração, extinção, sanções</label></li>
+<li><input class="blk" data-w="s8" id="s8-e" type="checkbox"/><label for="s8-e"><span class="tag">CIVIL</span>Contratos em espécie — compra e venda; prestação de serviço; empreitada</label></li>
+<li><input class="blk" data-w="s8" id="s8-f" type="checkbox"/><label for="s8-f"><span class="tag">PC</span>Cumprimento de sentença</label></li>
+<li><input class="blk" data-w="s8" id="s8-g" type="checkbox"/><label for="s8-g"><span class="tag">PORT</span>Vozes verbais + coesão — 10 questões FCC/dia</label></li>
+</ul>
+</div>
+<!-- S9 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S9</span><span class="wk-dates">14 – 20 set</span><span class="wk-prog" data-w="s9">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s9" id="s9-a" type="checkbox"/><label for="s9-a"><span class="tag">TRAB</span>Remuneração I — salário × remuneração; gorjetas; 13º; adicionais<span class="ref">Súm. 132, 191, 264, 354</span></label></li>
+<li><input class="blk" data-w="s9" id="s9-b" type="checkbox"/><label for="s9-b"><span class="tag">PROC</span>Execução I — liquidação; citação; penhora; embargos<span class="ref">CLT 879–884</span></label></li>
+<li><input class="blk" data-w="s9" id="s9-c" type="checkbox"/><label for="s9-c"><span class="tag">CONST</span>Processo legislativo (59–69) + Poder Executivo (76–91)</label></li>
+<li><input class="blk" data-w="s9" id="s9-d" type="checkbox"/><label for="s9-d"><span class="tag">ADM</span>Processo administrativo (9.784) + organização administrativa</label></li>
+<li><input class="blk" data-w="s9" id="s9-e" type="checkbox"/><label for="s9-e"><span class="tag">CIVIL</span>Responsabilidade civil (927–954)</label></li>
+<li><input class="blk" data-w="s9" id="s9-f" type="checkbox"/><label for="s9-f"><span class="tag">PC</span>Recursos I — teoria geral; apelação; agravo de instrumento</label></li>
+<li><input class="blk" data-w="s9" id="s9-g" type="checkbox"/><label for="s9-g"><span class="tag">PORT</span>Prova completa de Português FCC (cronometrada)</label></li>
+</ul>
+</div>
+<!-- S10 -->
+<div class="week">
+<div class="wk-head"><span class="wk-no">S10</span><span class="wk-dates">21 – 27 set</span><span class="wk-prog" data-w="s10">0/7</span></div>
+<ul>
+<li><input class="blk" data-w="s10" id="s10-a" type="checkbox"/><label for="s10-a"><span class="tag">TRAB</span>Remuneração II — equiparação salarial; proteção do salário; utilidades + prescrição<span class="ref">CLT 461, 458, 462–467 · CF 7º, XXIX · Súm. 6</span></label></li>
+<li><input class="blk" data-w="s10" id="s10-b" type="checkbox"/><label for="s10-b"><span class="tag">PROC</span>Execução II — IDPJ; expropriação; Fazenda Pública + dissídios coletivos (essencial)</label></li>
+<li><input class="blk" data-w="s10" id="s10-c" type="checkbox"/><label for="s10-c"><span class="tag">CONST</span>Administração pública (37–41) + revisão geral</label></li>
+<li><input class="blk" data-w="s10" id="s10-d" type="checkbox"/><label for="s10-d"><span class="tag">ADM</span>Responsabilidade civil do Estado + improbidade (8.429)</label></li>
+<li><input class="blk" data-w="s10" id="s10-e" type="checkbox"/><label for="s10-e"><span class="tag">CIVIL</span>Revisão pela curva de erros</label></li>
+<li><input class="blk" data-w="s10" id="s10-f" type="checkbox"/><label for="s10-f"><span class="tag">PC</span>Recursos II — panorama RE/REsp + revisão</label></li>
+<li><input class="blk" data-w="s10" id="s10-g" type="checkbox"/><label for="s10-g"><span class="tag">PORT</span>Revisão do caderno de erros</label></li>
+</ul>
+</div>
+<p class="note"><b>Regra de interrupção:</b> se o edital sair antes da S10, pare onde estiver e migre para a Fase 2. O edital real manda.</p>
+</section>
+ ============ 05 FASE 2 ============ 
+<section class="block" id="fase2">
+<div class="sec-head"><span class="no">SEÇÃO 05</span><h2>Fase 2 — Modo Edital</h2></div>
+<p class="lead">Da publicação do edital até 15 dias antes da prova.</p>
+<ol class="steps">
+<li>Verticalizar o edital real no Sistema Hunter e redistribuir as horas pelas lacunas (Deadline Gate: peso × gap × urgência).</li>
+<li>1 simulado por semana com as provas FCC de Analista: TRT-1, TRT-2, TRT-6, TRT-15 (2025) e TRF-3 (2024) — cronometrado, 5 alternativas, condições de prova.</li>
+<li>Análise de erro pós-simulado no mesmo dia: cada erro vira flashcard + retorno à lei seca do dispositivo.</li>
+<li>Se houver discursiva/estudo de caso para Analista: 1 treino por semana a partir daqui, com correção pela literalidade.</li>
+</ol>
+<div class="kpis">
+<div class="kpi"><div class="n">≥ 70%</div><div class="d">acerto nas específicas em simulado antes da prova</div></div>
+<div class="kpi"><div class="n">150–200</div><div class="d">questões FCC por semana</div></div>
+<div class="kpi"><div class="n">5/dia</div><div class="d">súmulas ou OJs do TST em flashcard</div></div>
+</div>
+</section>
+ ============ 06 FASE 3 ============ 
+<section class="block" id="reta-final">
+<div class="sec-head"><span class="no">SEÇÃO 06</span><h2>Fase 3 — Reta final (2 semanas)</h2></div>
+<ol class="steps">
+<li>Só lei seca marcada + súmulas + caderno de erros. Conteúdo novo está proibido.</li>
+<li>2 simulados leves (metade da prova) para manter ritmo sem desgaste.</li>
+<li>Véspera: revisão de 2h dos grifos, e mais nada. Sono é estratégia.</li>
+</ol>
+</section>
+ ============ 07 MÉTODO ============ 
+<section class="block" id="metodo">
+<div class="sec-head"><span class="no">SEÇÃO 07</span><h2>Protocolo por bloco de estudo</h2></div>
+<ol class="steps">
+<li><b>Lei seca ativa:</b> ler o dispositivo do tópico marcando verbos, prazos, percentuais e exceções — é exatamente onde a FCC troca a palavra.</li>
+<li><b>Questões no mesmo dia:</b> 20–25 questões FCC do mesmo tópico, sem exceção.</li>
+<li><b>Flashcard só do erro:</b> o que acertou não vira cartão.</li>
+<li><b>Fila SM-2:</b> revisão em 24h, 7 dias e 30 dias.</li>
+</ol>
+<p class="note"><b>Portão de Consolidação:</b> só avança de bloco com ≥ 75% de acerto nas questões. E é proibido assistir videoaula de tópico em que você já acerta 80% — videoaula ali é procrastinação disfarçada de estudo.</p>
+</section>
+ ============ 08 CORTE ============ 
+<section class="block" id="corte">
+<div class="sec-head"><span class="no">SEÇÃO 08</span><h2>O corte</h2></div>
+<div class="corte">
+<h3>Não estudar nesta fase</h3>
+<ul>
+<li>Controle de constitucionalidade além do básico (4% do histórico)</li>
+<li>Família e sucessões</li>
+<li>Direito coletivo aprofundado — CLT 611-A/611-B e CF art. 8º bastam</li>
+<li>Teoria, fontes e princípios de qualquer matéria</li>
+<li>Doutrina de autor e videoaulas panorâmicas</li>
+</ul>
+</div>
+</section>
+<footer>
+    Base: programa FCC dos TRTs 1, 2, 6 e 15 (2025) para Analista Judiciário – Área Judiciária · Raio-X: histórico de questões FCC em concursos de área judiciária · Ajuste fino na publicação do edital do TRT-8 (Modo Edital) · Progresso salvo automaticamente neste dispositivo.
+  </footer>
+</div>
+</main>
+</div>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
